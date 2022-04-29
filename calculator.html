@@ -1,0 +1,247 @@
+<html>
+
+<head>
+    <title>Welcome</title>
+    <style>
+        #main_heading {
+            color: red;
+            background-color: blue;
+            border: 2px dashed;
+            padding: 5px;
+        }
+
+        .image {
+            height: 200px;
+            width: 300px;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <h1 class="bg-info p-3 text-center" id="college_name">KMC College</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inc_dec_tool.html">Increase Decrease Tool</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calculator.html">Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="student_details.html">Student Details</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <hr>
+    <h2 class="text-center">Calculator</h2>
+    <div class="m-3 d-flex align-items-center justify-content-center">
+        
+        <div >
+            <input id="display" type="text" class="form-control">
+            <hr>
+            <div>
+
+                <button id="seven" type="button" class="btn btn-secondary">7</button>
+                <button id="eight" type="button" class="btn btn-secondary">8</button>
+                <button id="nine" type="button" class="btn btn-secondary">9</button>
+                <button id="divide" type="button" class="btn btn-secondary">/</button>
+                <button id="clear" type="button" class="btn btn-secondary">Clear</button>
+            </div>
+            <br>
+            <div>
+
+                <button id="four" type="button" class="btn btn-secondary">4</button>
+                <button id="five" type="button" class="btn btn-secondary">5</button>
+                <button id="six" type="button" class="btn btn-secondary">6</button>
+                <button id="mul" type="button" class="btn btn-secondary">*</button>
+            </div>
+            <br>
+            <div>
+
+                <button id="one" type="button" class="btn btn-secondary">1</button>
+                <button id="two" type="button" class="btn btn-secondary">2</button>
+                <button id="three" type="button" class="btn btn-secondary">3</button>
+                <button id="sub" type="button" class="btn btn-secondary">-</button>
+            </div>
+            <br>
+            <div>
+
+                <button id="zero" type="button" class="btn btn-secondary" style="width:70px;">0</button>
+                <button id="add" type="button" class="btn btn-secondary">+</button>
+                <button id="equals" type="button" class="btn btn-secondary">=</button>
+            </div>
+            <br>
+
+        </div>
+    </div>
+</body>
+<script>
+    var num1 = "";
+    var num2 = "";
+    var operator = "";
+    var result = "";
+    document.getElementById("zero").addEventListener("click", function () {
+        if (operator == "") {
+            num1 = num1 + "0";
+        }
+        else{
+            num2 = num2 + "0";
+        }
+        document.getElementById("display").value = num1+operator+num2;
+    });
+    document.getElementById("one").addEventListener("click", function () {
+        if (operator == "") {
+            num1 = num1 + "1";
+        }
+        else{
+            num2 = num2 + "1";
+        }
+        document.getElementById("display").value = num1+operator+num2;
+    });
+    document.getElementById("two").addEventListener("click", function () {
+        if (operator == "") {
+            num1 = num1 + "2";
+        }
+        else{
+            num2 = num2 + "2";
+        }
+        document.getElementById("display").value = num1+operator+num2;
+    });
+    document.getElementById("three").addEventListener("click", function () {
+        if (operator == "") {
+            num1 = num1 + "3";
+        }
+        else{
+            num2 = num2 + "3";
+        }
+        document.getElementById("display").value = num1+operator+num2;
+    });
+    document.getElementById("four").addEventListener("click", function () {
+        if (operator == "") {
+            num1 = num1 + "4";
+        }
+        else{
+            num2 = num2 + "4";
+        }
+        document.getElementById("display").value = num1+operator+num2;
+    });
+    document.getElementById("five").addEventListener("click", function () {
+        if (operator == "") {
+            num1 = num1 + "5";
+        }
+        else{
+            num2 = num2 + "5";
+        }
+        document.getElementById("display").value = num1+operator+num2;
+    });
+    document.getElementById("six").addEventListener("click", function () {
+        if (operator == "") {
+            num1 = num1 + "6";
+        }
+        else{
+            num2 = num2 + "6";
+        }
+        document.getElementById("display").value = num1+operator+num2;
+    });
+    document.getElementById("seven").addEventListener("click", function () {
+        if (operator == "") {
+            num1 = num1 + "7";
+        }
+        else{
+            num2 = num2 + "7";
+        }
+        document.getElementById("display").value = num1+operator+num2;
+    });
+    document.getElementById("eight").addEventListener("click", function () {
+        if (operator == "") {
+            num1 = num1 + "8";
+        }
+        else{
+            num2 = num2 + "8";
+        }
+        document.getElementById("display").value = num1+operator+num2;
+    });
+    document.getElementById("nine").addEventListener("click", function () {
+        if (operator == "") {
+            num1 = num1 + "9";
+        }
+        else{
+            num2 = num2 + "9";
+        }
+        document.getElementById("display").value = num1+operator+num2;
+    });
+
+    document.getElementById("divide").addEventListener("click", function () {
+        operator = "/";
+        document.getElementById("display").value = num1+operator+num2;
+    });
+    document.getElementById("mul").addEventListener("click", function () {
+        operator = "*";
+        document.getElementById("display").value = num1+operator+num2;
+    });
+    document.getElementById("sub").addEventListener("click", function () {
+        operator = "-";
+        document.getElementById("display").value = num1+operator+num2;
+    });
+    document.getElementById("add").addEventListener("click", function () {
+        operator = "+";
+        document.getElementById("display").value = num1+operator+num2;
+    });
+
+    document.getElementById("equals").addEventListener("click", function () {
+        num1 = Number(num1);
+        num2 = Number(num2);
+        if(operator == '/'){
+            result = num1/num2;
+        }
+        if(operator == '*'){
+            result = num1*num2;
+        }
+        if(operator == '+'){
+            result = num1+num2;
+        }
+        if(operator == '-'){
+            result = num1-num2;
+        }
+        num1 = result;
+        operator = "";
+        num2="";
+        document.getElementById("display").value = num1+operator+num2;
+    });
+
+    document.getElementById("clear").addEventListener("click", function () {
+        num1="";
+        operator="";
+        num2="";
+        document.getElementById("display").value = num1+operator+num2;
+    });
+</script>
+
+
+
+</html>

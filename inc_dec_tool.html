@@ -1,0 +1,87 @@
+<html>
+
+<head>
+    <title>Welcome</title>
+    <style>
+        #main_heading {
+            color: red;
+            background-color: blue;
+            border: 2px dashed;
+            padding: 5px;
+        }
+
+        .image {
+            height: 200px;
+            width: 300px;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+</head>
+
+<body>
+    <h1 class="bg-info p-3 text-center" id="college_name">KMC College</h1>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="login.html">Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="register.html">Register</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="inc_dec_tool.html">Increase Decrease Tool</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="calculator.html">Calculator</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="student_details.html">Student Details</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <hr>
+    <div class="m-3">
+        <h2>Increase Decrease Tool</h2>
+        <p>Please enjoy using this tool.</p>
+        <button type="button" id="increase_btn" class="btn btn-primary">Increase Size</button>
+        <button type="button" id="decrease_btn" class="btn btn-danger">Decrease Size</button>
+        <br>
+        <br>
+        <img src="images/slideshow1.jpg" id="image" alt="slideshow 1" height="200" width="200">
+    </div>
+</body>
+
+<script>
+
+
+    document.getElementById("increase_btn").addEventListener("click", function () {
+        document.getElementById("image").height = document.getElementById("image").height + 50;
+        document.getElementById("image").width = document.getElementById("image").width + 50;
+    });
+    document.getElementById("decrease_btn").addEventListener("click", function () {
+        document.getElementById("image").height = document.getElementById("image").height - 50;
+        document.getElementById("image").width = document.getElementById("image").width - 50;
+    });
+
+
+</script>
+
+</html>
